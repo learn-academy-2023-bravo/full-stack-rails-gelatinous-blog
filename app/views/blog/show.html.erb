@@ -5,3 +5,4 @@
 </p>
 
 <h5><%=link_to 'Back to Blog Post', blogs_path%></h5>
+<p><%= button_to 'Remove Post', delete_blog_path(@blog), method: 'delete' %></p>
