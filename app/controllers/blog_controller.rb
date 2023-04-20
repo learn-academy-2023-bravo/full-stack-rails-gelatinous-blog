@@ -9,6 +9,9 @@ class BlogController < ApplicationController
     def new
         @blog = Blog.new
     end
+    def edit
+        @blog = Blog.find(params[:id])
+      end
     def create
         @blog = Blog.create(blog_params)
           if @blog.valid?
